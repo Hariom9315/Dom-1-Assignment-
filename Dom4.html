@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="ip1">
+    <input type="date" id="ip2">
+    <select id="ip3">
+        <option value="">Select Gender</option>
+        <option value="Male">Male </option>
+        <option value="Female">Female </option>
+    </select>
+    <button onclick="clicked()">button</button>
+</body>
+<script>
+    let input1=document.getElementById("ip1")
+    let input2=document.getElementById("ip2")
+    let input3=document.getElementById("ip3")
+    function clicked()
+    {
+        let allvalue = input1.value + "  " + input2.value + " " +input3.value
+        //console.log(typeof (+input1.value));
+        alert(allvalue);
+    }
+</script>
+</html>

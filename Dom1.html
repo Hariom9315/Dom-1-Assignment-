@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom 1</title>
+    <style>
+        #head{ 
+            color: blue;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">this is heading</h1>
+    
+</body>
+<script>
+   // console.log("Hello World");
+    //console.log(document.title);
+    //console.log(document.URL);
+    //console.log(document.getElementById("head").innerText);
+    let heading =document.getElementById("head");
+    for(let i=1; i<=5; i++)
+    {
+        console.log(heading.innerText); 
+    }
+    heading.innerText="Hariom is grate";
+</script>
+</html>
